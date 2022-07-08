@@ -15,8 +15,6 @@ internal class NonBooleanPropertyPrefixedWithIsTest(private val env: KotlinCoreE
     @Test
     fun `excluded type ignored`() {
         val code = """
-            import com.github.turbomates.detektrules.BooleanWrapper
-
             data class O (var isDefault: BooleanWrapper)
             data class BooleanWrapper(val value: Boolean)
         """
